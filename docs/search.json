@@ -4,13 +4,13 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "Background\nI grew up in Delhi, India, and studied Electrical Engineering for my Bachelor’s degree. After graduating, I moved into tech and worked as a Data Engineer at Commonwealth Bank of Australia, where I built data pipelines in the financial crime domain — handling data at scale, designing systems that needed to be both reliable and fast, and seeing firsthand how the right data infrastructure can catch things that matter. That work gave me a solid engineering foundation, but it also left me wanting to get closer to the modeling and decision-making side of things — which is what eventually led me to pursue a Master’s in Data Science.\nWhy Data Science\nWorking in financial crime taught me that the hardest part usually isn’t moving data around — it’s making sense of it and building systems that can act on it intelligently. I found myself more and more interested in the machine learning side of the pipelines I was building: how models get designed, trained, and deployed to actually catch patterns humans would miss. That curiosity is what brought me to the MDS program at UBC. I wanted to go deeper into the theory and practice of machine learning, and build the skills to not just support data science teams, but to be one of the people designing the models and systems myself.\nOutside of Data Science\nWhen I’m not working on data or models, you’ll usually find me watching or playing football, or deep into a video game. I like unwinding with a good match on the weekend, whether I’m playing five-a-side or just watching from the couch. Gaming is my other go-to — it’s where I get to switch off, think about something completely different, and just have fun."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Rohit’s portfolio",
+    "title": "Rohit Bansal",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Hi, I’m Rohit — a Master’s student in Data Science at the University of British Columbia, building toward a career as a Data Scientist / ML Engineer. Before this, I spent time as a Data Engineer at Commonwealth Bank of Australia, working on financial crime data pipelines. I’m drawn to problems where data and machine learning can create real, tangible impact."
   }
 ]
