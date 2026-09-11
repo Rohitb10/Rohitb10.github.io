@@ -1,0 +1,14 @@
+---
+title: "My first weeks in MDS"
+author: "Rohit Bansal"
+date: 2026-09-10
+about:
+  template: trestles
+  image: images/orientation.jpg
+---
+
+Orientation was three days of meeting new people, alumni, faculty, and honestly way too much information to absorb at once. The best part was a scavenger hunt style activity where we roamed campus in groups, finding spots and completing little tasks together. It was a solid way to actually learn my way around while getting to know my cohort.
+
+Then classes started, and the pace jumped fast. Four subjects running at once means four new sets of concepts to wrap my head around every single week.
+
+Each course has a worksheet and lab due by week's end, so the routine is already forming. Learn, apply, submit, repeat. Two weeks in and it's intense, but the good kind of intense.
