@@ -72,7 +72,7 @@ more clearly.
 
 ```{r}
 #| label: fig-tackle-boxplot
-#| fig-cap: "Tackles per 90 minutes for each position (goalkeepers not included)."
+#| fig-cap: "Tackles per 90 minutes by outfield position, 2010 World Cup"
 worldcup2 |>
   ggplot(aes(x = Position, y = tackles_per_90)) +
   geom_boxplot() +
