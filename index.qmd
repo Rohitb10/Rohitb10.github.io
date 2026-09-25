@@ -1,8 +1,28 @@
 ---
 title: "Rohit Bansal"
 about:
-  template: jolla
+  template: trestles
   image: images/profile.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: www.linkedin.com/in/rohitbansal98
+    - icon: github
+      text: GitHub
+      href: https://github.com/Rohitb10
+    - icon: envelope
+      text: Email
+      href: mailto:bansalrohit819@gmail.com
 ---
 
-Hi, I'm Rohit — a Master's student in Data Science at the University of British Columbia, building toward a career as a Data Scientist / ML Engineer. Before this, I spent time as a Data Engineer at Commonwealth Bank of Australia, working on financial crime data pipelines. I'm drawn to problems where data and machine learning can create real, tangible impact.
+Hi, I'm Rohit — a Master's student in Data Science at the University of
+British Columbia, building toward a career as a Data Scientist / ML
+Engineer.
+
+Before this, I spent time as a Data Engineer at Commonwealth Bank of
+Australia, working on financial crime data pipelines. I'm drawn to
+problems where data and machine learning can create real, tangible impact.
+
+I'm currently exploring [add 1 interest — e.g. sports analytics, ML
+infrastructure, whatever you're into], and always happy to connect with
+others working on similar problems.
