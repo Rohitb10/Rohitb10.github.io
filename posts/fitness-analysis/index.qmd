@@ -1,0 +1,99 @@
+---
+title: "Does exercise actually relate to fitness?"
+author: "Rohit Bansal"
+date: 2026-09-24
+format: html
+---
+
+## Introduction
+
+For this post I wanted to try a small sports/fitness dataset in Python. I
+picked one that's built right into scikit-learn called `linnerud`. It has
+data from 20 middle-aged men who did 3 exercises (chin-ups, sit-ups, and
+jumps) and also had 3 physical measurements taken (weight, waist, and
+pulse). I wanted to see if doing more of these exercises is actually
+related to having a lower weight, smaller waist, or lower pulse.
+
+Source: `linnerud` dataset, built into
+[`scikit-learn`](https://scikit-learn.org/stable/datasets/toy_dataset.html#linnerud-dataset).
+
+```{python}
+#| label: load-packages
+#| message: false
+#| warning: false
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_linnerud
+```
+
+## Loading the data
+
+The dataset comes split into two parts: the exercise numbers and the
+physical measurements. I put them together into one table so it's easier
+to work with.
+
+```{python}
+#| label: load-data
+linnerud = load_linnerud()
+
+exercise = pd.DataFrame(linnerud.data, columns=linnerud.feature_names)
+physio = pd.DataFrame(linnerud.target, columns=linnerud.target_names)
+
+data = pd.concat([exercise, physio], axis=1)
+data.head()
+```
+
+There are only 20 people in this dataset, which is pretty small, but it's
+enough to try some basic comparisons.
+
+```{python}
+#| label: basic-stats
+data.describe().round(1)
+```
+
+Looking at the averages, people did about 9-10 chin-ups, 145 sit-ups, and
+70 jumps on average, and had an average waist size of about 35 inches and
+pulse of about 56.
+
+## Chin-ups vs waist size
+
+My first guess was that people who can do more chin-ups probably have a
+smaller waist. I made a scatter plot to check this.
+
+```{python}
+#| label: fig-chinups-waist
+#| fig-cap: "Chin-ups vs waist size for 20 men."
+plt.scatter(data["Chins"], data["Waist"])
+plt.xlabel("Chin-ups")
+plt.ylabel("Waist (inches)")
+plt.show()
+```
+
+There does seem to be a slight downward pattern here, so people who could
+do more chin-ups tended to have a somewhat smaller waist, but it's not a
+super strong relationship and there are some exceptions.
+
+## Sit-ups vs pulse
+
+Next I checked if people who did more sit-ups had a lower resting pulse.
+
+```{python}
+#| label: fig-situps-pulse
+#| fig-cap: "Sit-ups vs pulse for 20 men."
+plt.scatter(data["Situps"], data["Pulse"])
+plt.xlabel("Sit-ups")
+plt.ylabel("Pulse")
+plt.show()
+```
+
+This one doesn't look like it has much of a pattern at all. The points are
+pretty scattered, so based on this small dataset, sit-ups don't seem to be
+clearly related to pulse.
+
+## Conclusion
+
+Using the `linnerud` dataset, I found a moderate relationship between
+chin-ups and waist size, but almost no relationship between sit-ups and
+pulse. This dataset is very small (only 20 people), so I wouldn't take
+these results too seriously, but it was a good first try at loading a
+built-in dataset and making some plots in Python.
