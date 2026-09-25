@@ -1,5 +1,10 @@
+# Quarto build artifacts
 /.quarto/
 **/*.quarto_ipynb
-.DS_Store
 _site
+
+# OS
+.DS_Store
+
+# Python (uv)
 .venv
